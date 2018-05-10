@@ -1,5 +1,7 @@
 # Phantom Blog Hexo
 
+> This is a clone theme from hexo phatom. Has already modified for noncomercial used.
+
 ![](http://www.codeblocq.com/img/hexo-theme-thumbnail/Phantom.png)
 
 Hexo implementation of the free [HTML5Up Phantom Template](http://html5up.net/phantom)
@@ -44,7 +46,7 @@ $ npm install --save hexo-renderer-scss
 Install the theme by using:
 
 ```
-$ git clone https://github.com/klugjo/hexo-theme-phantom themes/phantom
+$ git clone https://github.com/Annilla/hexo-theme-phantom themes/phantom
 ```
 
 Then update your blog's main `_config.yml` to set the theme to `phantom`:
