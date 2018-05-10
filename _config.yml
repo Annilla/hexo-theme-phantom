@@ -2,10 +2,10 @@
 menu:
   Home: /
   Archives: /archives
-  About: /about.html
+  About: /about/index.html
 
 # Logo Image Source
-logo_src: /images/logo.svg
+logo_src: images/logo.svg
 
 # Theme Main Subtitle
 subtitle_main: This is Phantom, a free, fully responsive site<br />template designed by <a href="http://html5up.net">HTML5 UP</a>.
@@ -31,7 +31,7 @@ show_dates:
 # Comments. Choose one by filling up the information
 comments:
   # Disqus comments
-  disqus_shortname: klugjo
+  disqus_shortname:
   # Facebook comments
   facebook:
     appid:
@@ -42,13 +42,13 @@ comments:
 google_analytics:
 
 # Social Accounts
-twitter_url: https://twitter.com/?lang=en
-facebook_url: https://www.facebook.com/
-instagram_url: https://www.instagram.com/
-dribble_url: https://dribbble.com/
-github_url: https://github.com/klugjo/hexo-theme-phantom/commits?author=klugjo
-googleplus_url: https://plus.google.com/
-behance_url: https://www.behance.net/
-fivehundredpx_url: https://500px.com/
+twitter_url: \#
+facebook_url: \#
+instagram_url: \#
+dribble_url: \#
+github_url: \#
+googleplus_url: \#
+behance_url: \#
+fivehundredpx_url: \#
 email_url: \#
 rss_url: \#
