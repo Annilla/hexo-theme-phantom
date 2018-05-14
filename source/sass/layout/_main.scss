@@ -12,4 +12,19 @@
 		@include breakpoint(small) {
 			@include padding(3em, 0, (-3em, 0, 3em, 0));
 		}
+
+		.indexTitle {
+			color: #ffffff;
+			text-align: center;
+			letter-spacing: normal;
+			margin-bottom: 0.5em;
+		}
+
+		.indexSubtitle {
+			color: #ffffff;
+			text-align: center;
+			font-weight: bold;
+			letter-spacing: 5px;
+			margin-bottom: 6em;
+		}
 	}

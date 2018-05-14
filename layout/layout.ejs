@@ -4,7 +4,12 @@
 <!-- Head tag -->
 <%- partial('_partial/head') %>
 
+
+<% if (page.path.indexOf('index.html') > -1) { %>
+<body class="indexBg">
+<% } else { %>
 <body>
+<% } %>
 
     <div id="wrapper">
 
