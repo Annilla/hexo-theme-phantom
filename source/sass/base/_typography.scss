@@ -239,3 +239,37 @@
 			opacity: 0.5;
 		}
 	}
+
+	// Index background
+	body.indexBg {
+		background-image: url('../images/indexLineR.svg'),
+						url('../images/indexLineL.svg'),
+						url('../images/indexBg.jpg');
+		background-size: 24% auto,
+						30% auto,
+						100% auto;
+		background-position: right 15%,
+							-5% 25%,
+							center top;
+		background-repeat: no-repeat,
+							no-repeat,
+							no-repeat;
+		
+		@include breakpoint(medium) {
+			background-size: 30% auto,
+						40% auto,
+						100% auto;
+			background-position: right 10%,
+								-5% 11%,
+								center top;
+		}
+
+		@include breakpoint(small) {
+			background-size: 40% auto,
+						50% auto,
+						100% auto;
+			background-position: right 5.8%,
+								-5% 6.2%,
+								center top;
+		}
+	}
