@@ -15,6 +15,7 @@
 		@include vendor('flex-wrap', 'wrap');
 		postiion: relative;
 		margin: ($gutter * -1) 0 0 ($gutter * -1);
+		padding: 0 5%; // Smaller Tiles
 
 		article {
 			@include vendor('transition', (
@@ -127,12 +128,23 @@
 				}
 
 				.link {
+					width: 100px;
+					display: inline-block;
+					margin: 0 5px;
+					padding: 10px 0;
+					border-radius: 5px;
+					border-bottom: none;
 					color: #fff;
-					margin: 0 10px;
+					background-color: rgba(255,255,255,0.3);
+					transition: .5s;
+					&:hover {
+						color: #fff !important;
+						background-color: rgba(244,59,71,0.8);
+					}
 				}
 			}
 
-			&.style1, &.style9 {
+			&.style1, &.style6 {
 				> .image:before {
 					background-color: _palette(accent1);
 				}
@@ -150,7 +162,7 @@
 				}
 			}
 
-			&.style4, &.style12 {
+			&.style4, &.style9 {
 				> .image:before {
 					background-color: _palette(accent4);
 				}
@@ -159,12 +171,6 @@
 			&.style5, &.style10 {
 				> .image:before {
 					background-color: _palette(accent5);
-				}
-			}
-
-			&.style6, &.style11 {
-				> .image:before {
-					background-color: _palette(accent6);
 				}
 			}
 
@@ -216,6 +222,8 @@
 
 			margin: ($gutter * -1) 0 0 ($gutter * -1);
 
+			padding: 0 5%; // Smaller Tiles
+
 			article {
 				width: calc(#{(100% / 3)} - #{$gutter * 1});
 				margin: $gutter 0 0 $gutter;
@@ -227,6 +235,8 @@
 
 			margin: ($gutter * -1) 0 0 ($gutter * -1);
 
+			padding: 0;
+
 			article {
 				width: calc(#{(100% / 2)} - #{$gutter * 1});
 				margin: $gutter 0 0 $gutter;
@@ -237,6 +247,8 @@
 			$gutter: _size(gutter) * 0.5;
 
 			margin: ($gutter * -1) 0 0 ($gutter * -1);
+
+			padding: 0;
 
 			article {
 				width: calc(#{(100% / 2)} - #{$gutter * 1});
@@ -254,6 +266,8 @@
 			$gutter: _size(gutter) * 0.5;
 
 			margin: 0;
+
+			padding: 0;
 
 			article {
 				width: 100%;

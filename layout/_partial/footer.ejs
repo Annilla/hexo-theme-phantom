@@ -10,6 +10,12 @@
         <section>
             <h2>Follow</h2>
             <ul class="icons">
+                <% if (theme.blog_url) { %>
+                    <li><a href="<%- theme.blog_url %>" class="icon style2 fa-pencil" target="_blank" ><span class="label">Blog</span></a></li>
+                <% } %>
+                <% if (theme.maintain_url) { %>
+                    <li><a href="<%- theme.maintain_url %>" class="icon style2 fa-wrench" target="_blank" ><span class="label">Maintain Document</span></a></li>
+                <% } %>
                 <% if (theme.twitter_url) { %>
                     <li><a href="<%- theme.twitter_url %>" class="icon style2 fa-twitter" target="_blank" ><span class="label">Twitter</span></a></li>
                 <% } %>

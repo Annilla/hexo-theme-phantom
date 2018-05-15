@@ -34,6 +34,10 @@
 					height: 2em;
 				}
 			}
+
+			.title {
+				color: #fff;
+			}
 		}
 
 		nav {
@@ -59,8 +63,8 @@
 						height: 3em;
 						line-height: 3em;
 						padding: 0 1.5em;
-						background-color: transparentize(_palette(bg), 0.5);
-						border-radius: _size(border-radius);
+						// background-color: transparentize(_palette(bg), 0.5);
+						border-radius: 8px;
 						border: 0;
 						font-size: 0.8em;
 						font-weight: _font(weight-bold);

@@ -144,7 +144,14 @@
 	}
 
 	blockquote {
-		border-left: solid (_size(border-width) * 4) _palette(border);
+		// border-left: solid (_size(border-width) * 4) _palette(border);
+		
+		// Gradient border
+		border-width: 4px 0 4px 4px;
+		border-style: solid;
+		border-image:
+		linear-gradient(to bottom, _palette(accent1), _palette(accent5)) 1 100%;
+			
 		font-style: italic;
 		margin: 0 0 _size(element-margin) 0;
 		padding: (_size(element-margin) / 4) 0 (_size(element-margin) / 4) _size(element-margin);
@@ -213,4 +220,56 @@
 	// IMG fixed for larger then screen size
 	img {
 		max-width: 100%;
+	}
+
+	// Wesite link
+	.postLink {
+		display: block;
+		width: 200px;
+		padding: 10px 0;
+		background: linear-gradient(to right, _palette(accent1) 0%, _palette(accent5) 100%);
+		border-radius: 30px;
+		border-bottom: none;
+		font-size: 18px;
+		font-weight: bold;
+		text-align: center;
+		transition: .5s;
+		&:hover {
+			color: #fff !important;
+			opacity: 0.5;
+		}
+	}
+
+	// Index background
+	body.indexBg {
+		background-image: url('../images/indexLineR.svg'),
+						url('../images/indexLineL.svg'),
+						url('../images/indexBg.jpg');
+		background-size: 24% auto,
+						30% auto,
+						100% auto;
+		background-position: right 15%,
+							-5% 25%,
+							center top;
+		background-repeat: no-repeat,
+							no-repeat,
+							no-repeat;
+		
+		@include breakpoint(medium) {
+			background-size: 30% auto,
+						40% auto,
+						100% auto;
+			background-position: right 10%,
+								-5% 11%,
+								center top;
+		}
+
+		@include breakpoint(small) {
+			background-size: 40% auto,
+						50% auto,
+						100% auto;
+			background-position: right 5.8%,
+								-5% 6.2%,
+								center top;
+		}
 	}
